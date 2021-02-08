@@ -12,4 +12,11 @@ main() {
   curl curl -F "sync_wiki=${INPUT_SYNC_WIKI}" -F "authenticity_token=${GITEE_TOKEN}" "https://gitee.com/${INPUT_NAME}/force_sync_project"
 }
 
+sanitize() {
+  if [ -z "${1}" ]; then
+    >&2 echo "Unable to find the ${2}. Did you set with.${2}?"
+    exit 1
+  fi
+}
+
 main
