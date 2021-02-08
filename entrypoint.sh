@@ -11,3 +11,5 @@ main() {
   
   curl curl -F "sync_wiki=${INPUT_SYNC_WIKI}" -F "authenticity_token=${GITEE_TOKEN}" "https://gitee.com/${INPUT_NAME}/force_sync_project"
 }
+
+main
