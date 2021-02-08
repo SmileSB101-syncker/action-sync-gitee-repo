@@ -1,5 +1,5 @@
 
-FROM docker:19.03.2 as runtime
+FROM ubuntu:latest as runtime
 LABEL "repository"="https://github.com/SmileSB101-syncker/action-sync-gitee-repo"
 LABEL "maintainer"="SmileSB101"
 
