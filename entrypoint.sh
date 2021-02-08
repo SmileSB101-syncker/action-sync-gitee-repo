@@ -12,7 +12,7 @@ main() {
   
   GITEE_TOKEN="OZ4MweA0bSR1jYZ88gjEBcRK7GrPU85y/tEGaJIq7wk="
   
-  curl -X POST -F "sync_wiki=${SYNCWIKI}" -F "authenticity_token=OZ4MweA0bSR1jYZ88gjEBcRK7GrPU85y/tEGaJIq7wk=" "https://gitee.com/${INPUT_NAME}/force_sync_project"
+  curl -X POST -F "sync_wiki=false" -F "authenticity_token=OZ4MweA0bSR1jYZ88gjEBcRK7GrPU85y/tEGaJIq7wk=" "https://gitee.com/${INPUT_NAME}/force_sync_project"
 }
 
 sanitize() {
