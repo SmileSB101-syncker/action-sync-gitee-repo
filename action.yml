@@ -11,9 +11,6 @@ inputs:
   sync_wiki:
     description: 'Is need sync wiki'
     required: false
-outputs:
-  sync-message:
-    description: 'Is the message, which was action sync result'
 runs:
   using: 'docker'
   image: 'Dockerfile'
