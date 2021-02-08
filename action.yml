@@ -1,0 +1,19 @@
+name: 'Publish Docker'
+author: 'Lars Gohr'
+branding:
+  icon: 'anchor'
+  color: 'blue'
+description: 'Uses the git branch as the docker tag and pushes the container'
+inputs:
+  name:
+    description: 'The name of the repo you would like to sync'
+    required: true
+  sync_wiki:
+    description: 'Is need sync wiki'
+    required: false
+outputs:
+  sync-message:
+    description: 'Is the message, which was action sync result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
